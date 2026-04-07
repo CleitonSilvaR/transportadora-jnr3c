@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TR JN3C | Transporte de Contêineres e Carga Seca | Itajaí/SC</title>
+  <meta name="description" content="Transportadora especializada em contêineres, remoção portuária e carga seca. Rastreamento em tempo real, seguro de cargas. Atendemos Sul e Sudeste do Brasil. Itajaí/SC." />
+  <meta name="keywords" content="transportadora contêineres Itajaí, frete SC, transporte portuário Santa Catarina, carga seca sul brasil, TR JN3C, remoção portuária Itajaí" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="TR JN3C | Transporte de Contêineres e Carga Seca" />
+  <meta property="og:description" content="Transportadora especializada com rastreamento via satélite e seguro de cargas. Itajaí/SC." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://transportadora-trjn3c.com.br" />
+  <meta property="og:image" content="https://transportadora-trjn3c.com.br/assets/images/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="canonical" href="https://transportadora-trjn3c.com.br" />
+
+  <!-- Favicons -->
+  <link rel="icon" href="assets/favicon/favicon.ico" sizes="any" />
+  <link rel="icon" href="assets/favicon/favicon-32x32.png" type="image/png" sizes="32x32" />
+
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MovingCompany",
+    "name": "TR JN3C LTDA",
+    "description": "Transportadora especializada em contêineres, remoção portuária e carga seca no Sul e Sudeste do Brasil.",
+    "telephone": "+554399818-3101",
+    "email": "trjn3csuporte@outlook.com",
+    "logo": "https://transportadora-trjn3c.com.br/assets/images/logo-transportadora-trjn3c.png",
+    "image": "https://transportadora-trjn3c.com.br/assets/images/og-image.jpg",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Itajaí",
+      "addressRegion": "SC",
+      "addressCountry": "BR"
+    },
+    "areaServed": ["Sul do Brasil", "Sudeste do Brasil"],
+    "sameAs": [
+      "https://instagram.com/transportadorajn3c",
+      "https://tiktok.com/@transportadorajn3c"
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800;900&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --orange: #F26722;
+      --orange-dark: #C9500A;
+      --orange-glow: rgba(242,103,34,0.18);
+      --black: #0A0A0A;
+      --dark: #111111;
+      --dark2: #181818;
+      --gray: #2A2A2A;
+      --muted: #888;
+      --white: #F5F5F5;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--black);
+      color: var(--white);
+      font-family: 'Barlow', sans-serif;
+      overflow-x: hidden;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed; top: 0; left: 0; width: 100%; z-index: 100;
+      padding: 0.75rem 2rem;
+      display: flex; align-items: center; justify-content: space-between;
+      background: rgba(10,10,10,0.9);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(242,103,34,0.15);
+    }
+    .nav-logo img {
+      height: 52px;
+      width: auto;
+      display: block;
+    }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a {
+      color: var(--muted); text-decoration: none;
+      font-size: 0.85rem; font-weight: 600; letter-spacing: 0.08em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--orange); }
+    .nav-cta {
+      background: var(--orange); color: #fff; border: none;
+      padding: 0.55rem 1.4rem; border-radius: 4px;
+      font-weight: 700; font-size: 0.85rem; letter-spacing: 0.06em;
+      text-transform: uppercase; cursor: pointer;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.1s;
+    }
+    .nav-cta:hover { background: var(--orange-dark); transform: translateY(-1px); }
+
+    /* ── HERO ── */
+    #hero {
+      min-height: 100vh;
+      display: flex; flex-direction: column; justify-content: center;
+      position: relative; overflow: hidden;
+      padding: 8rem 2rem 4rem;
+    }
+    .hero-bg {
+      position: absolute; inset: 0;
+      background:
+        radial-gradient(ellipse 60% 50% at 70% 50%, rgba(242,103,34,0.12) 0%, transparent 70%),
+        linear-gradient(180deg, #0A0A0A 0%, #111 100%);
+    }
+    .hero-grid-lines {
+      position: absolute; inset: 0; opacity: 0.04;
+      background-image:
+        linear-gradient(var(--white) 1px, transparent 1px),
+        linear-gradient(90deg, var(--white) 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+    .hero-road {
+      position: absolute; bottom: 0; left: 0; right: 0; height: 6px;
+      background: linear-gradient(90deg, transparent, var(--orange), transparent);
+      opacity: 0.6;
+    }
+    .hero-content { position: relative; z-index: 1; max-width: 800px; }
+
+    /* logo hero */
+    .hero-logo {
+      margin-bottom: 2rem;
+    }
+    .hero-logo img {
+      height: 90px;
+      width: auto;
+      filter: drop-shadow(0 0 30px rgba(242,103,34,0.25));
+    }
+
+    .hero-tag {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: rgba(242,103,34,0.12); border: 1px solid rgba(242,103,34,0.3);
+      color: var(--orange); padding: 0.35rem 0.9rem; border-radius: 2px;
+      font-size: 0.75rem; font-weight: 700; letter-spacing: 0.12em;
+      text-transform: uppercase; margin-bottom: 1.5rem;
+    }
+    .hero-tag::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: var(--orange); animation: pulse 2s infinite; }
+    @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
+
+    h1 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900; font-size: clamp(3rem, 8vw, 7rem);
+      line-height: 0.92; letter-spacing: -0.01em;
+      text-transform: uppercase; margin-bottom: 1.5rem;
+    }
+    h1 em { color: var(--orange); font-style: normal; }
+    .hero-sub {
+      font-size: clamp(1rem, 2vw, 1.2rem); color: #aaa;
+      max-width: 520px; line-height: 1.6; margin-bottom: 2.5rem;
+    }
+    .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .btn-primary {
+      display: inline-flex; align-items: center; gap: 0.6rem;
+      background: var(--orange); color: #fff;
+      padding: 1rem 2rem; border-radius: 4px;
+      font-weight: 700; font-size: 1rem; letter-spacing: 0.04em;
+      text-decoration: none; text-transform: uppercase;
+      transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+      box-shadow: 0 0 30px rgba(242,103,34,0.35);
+    }
+    .btn-primary:hover { background: var(--orange-dark); transform: translateY(-2px); box-shadow: 0 0 50px rgba(242,103,34,0.5); }
+    .btn-secondary {
+      display: inline-flex; align-items: center; gap: 0.6rem;
+      border: 1px solid var(--gray); color: var(--white);
+      padding: 1rem 2rem; border-radius: 4px;
+      font-weight: 600; font-size: 1rem;
+      text-decoration: none; text-transform: uppercase; letter-spacing: 0.04em;
+      transition: border-color 0.2s, color 0.2s;
+    }
+    .btn-secondary:hover { border-color: var(--orange); color: var(--orange); }
+
+    .stats-bar {
+      position: relative; z-index: 1;
+      display: flex; gap: 0; margin-top: 5rem;
+      border-top: 1px solid var(--gray);
+    }
+    .stat {
+      flex: 1; padding: 1.5rem 1rem;
+      border-right: 1px solid var(--gray);
+    }
+    .stat:last-child { border-right: none; }
+    .stat-num {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900; font-size: 2.2rem; color: var(--orange);
+      line-height: 1;
+    }
+    .stat-label { font-size: 0.78rem; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; margin-top: 0.3rem; }
+
+    /* ── SECTION BASE ── */
+    section { padding: 6rem 2rem; }
+    .container { max-width: 1100px; margin: 0 auto; }
+    .section-label {
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.15em;
+      text-transform: uppercase; color: var(--orange); margin-bottom: 0.8rem;
+    }
+    h2 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900; font-size: clamp(2rem, 5vw, 3.5rem);
+      text-transform: uppercase; line-height: 1; margin-bottom: 1rem;
+    }
+    h2 span { color: var(--orange); }
+    .section-desc { color: #888; max-width: 540px; line-height: 1.7; margin-bottom: 3rem; }
+
+    /* ── SERVIÇOS ── */
+    #servicos { background: var(--dark); }
+    .services-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1px; background: var(--gray); border: 1px solid var(--gray);
+    }
+    .service-card {
+      background: var(--dark); padding: 2.5rem 2rem;
+      position: relative; overflow: hidden;
+      transition: background 0.3s;
+    }
+    .service-card:hover { background: var(--dark2); }
+    .service-card::after {
+      content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 2px;
+      background: var(--orange); transform: scaleX(0); transform-origin: left;
+      transition: transform 0.3s;
+    }
+    .service-card:hover::after { transform: scaleX(1); }
+    .service-icon { font-size: 2rem; margin-bottom: 1.2rem; display: block; }
+    .service-card h3 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800; font-size: 1.3rem; text-transform: uppercase;
+      margin-bottom: 0.6rem; letter-spacing: 0.03em;
+    }
+    .service-card p { font-size: 0.88rem; color: #777; line-height: 1.6; }
+
+    /* ── DIFERENCIAIS ── */
+    #diferenciais { background: var(--black); }
+    .diff-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center; }
+    .diff-list { display: flex; flex-direction: column; gap: 1.5rem; }
+    .diff-item { display: flex; gap: 1.2rem; align-items: flex-start; }
+    .diff-icon {
+      width: 48px; height: 48px; min-width: 48px;
+      background: var(--orange-glow); border: 1px solid rgba(242,103,34,0.3);
+      border-radius: 4px; display: flex; align-items: center; justify-content: center;
+      font-size: 1.3rem;
+    }
+    .diff-item h4 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800; font-size: 1.1rem; text-transform: uppercase;
+      margin-bottom: 0.25rem;
+    }
+    .diff-item p { font-size: 0.85rem; color: #777; line-height: 1.5; }
+    .diff-visual {
+      background: var(--dark2); border: 1px solid var(--gray);
+      border-radius: 4px; padding: 3rem 2rem; text-align: center;
+    }
+    .diff-visual .big-num {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900; font-size: 5rem; color: var(--orange); line-height: 1;
+    }
+    .diff-visual p { color: #555; font-size: 0.85rem; margin-top: 0.5rem; text-transform: uppercase; letter-spacing: 0.08em; }
+
+    /* ── REGIÕES ── */
+    #regioes { background: var(--dark); }
+    .regions-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 1rem; margin-top: 2rem;
+    }
+    .region-card {
+      background: var(--dark2); border: 1px solid var(--gray);
+      padding: 1.5rem; border-radius: 4px; text-align: center;
+      transition: border-color 0.2s;
+    }
+    .region-card:hover { border-color: var(--orange); }
+    .region-card .flag { font-size: 2rem; margin-bottom: 0.5rem; }
+    .region-card h4 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 800; font-size: 1.1rem; text-transform: uppercase;
+    }
+    .region-card .highlight {
+      background: var(--orange); color: #fff;
+      font-size: 0.65rem; font-weight: 700; letter-spacing: 0.1em;
+      text-transform: uppercase; padding: 0.15rem 0.5rem; border-radius: 2px;
+      margin-top: 0.4rem; display: inline-block;
+    }
+
+    /* ── CONTATO ── */
+    #contato { background: var(--black); }
+    .contact-wrapper { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
+    .contact-info { display: flex; flex-direction: column; gap: 1.5rem; }
+    .contact-item { display: flex; gap: 1rem; align-items: center; }
+    .contact-item .icon {
+      width: 44px; height: 44px; min-width: 44px;
+      background: var(--orange-glow); border: 1px solid rgba(242,103,34,0.25);
+      border-radius: 4px; display: flex; align-items: center; justify-content: center;
+      font-size: 1.2rem;
+    }
+    .contact-item a { color: var(--white); text-decoration: none; font-weight: 600; }
+    .contact-item a:hover { color: var(--orange); }
+    .contact-item span { font-size: 0.78rem; color: var(--muted); display: block; }
+    .social-links { display: flex; gap: 1rem; margin-top: 1rem; }
+    .social-btn {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      padding: 0.7rem 1.2rem; border-radius: 4px;
+      font-weight: 700; font-size: 0.85rem; letter-spacing: 0.05em;
+      text-decoration: none; text-transform: uppercase;
+      border: 1px solid var(--gray);
+      transition: all 0.2s;
+    }
+    .social-btn.ig { color: #E1306C; border-color: rgba(225,48,108,0.3); }
+    .social-btn.ig:hover { background: rgba(225,48,108,0.1); border-color: #E1306C; }
+    .social-btn.tt { color: #fff; border-color: rgba(255,255,255,0.2); }
+    .social-btn.tt:hover { background: rgba(255,255,255,0.07); border-color: #fff; }
+    .cta-box {
+      background: var(--dark2); border: 1px solid var(--gray);
+      border-radius: 6px; padding: 2.5rem; text-align: center;
+    }
+    .cta-box h3 {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-weight: 900; font-size: 1.8rem; text-transform: uppercase;
+      margin-bottom: 0.5rem;
+    }
+    .cta-box p { color: #777; font-size: 0.9rem; margin-bottom: 1.5rem; line-height: 1.6; }
+    .whatsapp-btn {
+      display: inline-flex; align-items: center; gap: 0.7rem;
+      background: #25D366; color: #fff;
+      padding: 1rem 2rem; border-radius: 4px;
+      font-weight: 800; font-size: 1rem; text-transform: uppercase;
+      text-decoration: none; letter-spacing: 0.05em; width: 100%;
+      justify-content: center;
+      transition: background 0.2s, transform 0.15s;
+      box-shadow: 0 0 30px rgba(37,211,102,0.25);
+    }
+    .whatsapp-btn:hover { background: #1da851; transform: translateY(-2px); }
+
+    /* ── FOOTER ── */
+    footer {
+      background: var(--dark); border-top: 1px solid var(--gray);
+      padding: 2rem; text-align: center;
+    }
+    .footer-logo img {
+      height: 40px; width: auto;
+      margin-bottom: 0.75rem;
+      filter: brightness(0.9);
+    }
+    footer p { color: #444; font-size: 0.78rem; }
+    footer a { color: #555; text-decoration: none; }
+    footer a:hover { color: var(--orange); }
+
+    /* ── MOBILE ── */
+    @media (max-width: 768px) {
+      nav { padding: 0.75rem 1rem; }
+      .nav-links { display: none; }
+      .nav-logo img { height: 40px; }
+      .hero-logo img { height: 64px; }
+      .stats-bar { flex-wrap: wrap; }
+      .stat { flex: 0 0 50%; border-right: none; border-bottom: 1px solid var(--gray); }
+      .diff-grid { grid-template-columns: 1fr; }
+      .diff-visual { display: none; }
+      .contact-wrapper { grid-template-columns: 1fr; gap: 2rem; }
+      h1 { font-size: 3.5rem; }
+    }
+
+    .fade-up {
+      opacity: 0; transform: translateY(30px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .fade-up.visible { opacity: 1; transform: translateY(0); }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#hero" class="nav-logo">
+    <img
+      src="assets/images/logo-transportadora-trjn3c.png"
+      alt="TR JN3C Transportadora"
+      width="140"
+      height="52"
+    />
+  </a>
+  <ul class="nav-links">
+    <li><a href="#servicos">Serviços</a></li>
+    <li><a href="#diferenciais">Diferenciais</a></li>
+    <li><a href="#regioes">Regiões</a></li>
+    <li><a href="#contato">Contato</a></li>
+  </ul>
+  <a href="https://wa.me/5543998183101?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento." class="nav-cta" target="_blank" rel="noopener">Solicitar Orçamento</a>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-grid-lines"></div>
+  <div class="hero-road"></div>
+
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-logo">
+        <img
+          src="assets/images/logo-transportadora-trjn3c.png"
+          alt="TR JN3C - Transportadora de Contêineres em Itajaí SC"
+          width="320"
+          height="120"
+          loading="eager"
+        />
+      </div>
+      <div class="hero-tag">📍 Itajaí/SC &mdash; Atuação Nacional</div>
+      <h1>
+        Transporte<br/>
+        de <em>Contêineres</em><br/>
+        com Segurança
+      </h1>
+      <p class="hero-sub">
+        Especialistas em contêineres, remoção portuária e carga seca.
+        Rastreamento via satélite em tempo real. Frota própria com seguro de cargas.
+        Sul e Sudeste do Brasil.
+      </p>
+      <div class="hero-actions">
+        <a href="https://wa.me/5543998183101?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20um%20or%C3%A7amento." class="btn-primary" target="_blank" rel="noopener">
+          💬 Falar no WhatsApp
+        </a>
+        <a href="#servicos" class="btn-secondary">Ver Serviços →</a>
+      </div>
+    </div>
+
+    <div class="stats-bar">
+      <div class="stat"><div class="stat-num">24h</div><div class="stat-label">Disponibilidade</div></div>
+      <div class="stat"><div class="stat-num">100%</div><div class="stat-label">Cargas Rastreadas</div></div>
+      <div class="stat"><div class="stat-num">Sul+SE</div><div class="stat-label">Foco de Atuação</div></div>
+      <div class="stat"><div class="stat-num">BR</div><div class="stat-label">Todo Território Nacional</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVIÇOS -->
+<section id="servicos">
+  <div class="container">
+    <p class="section-label fade-up">O que fazemos</p>
+    <h2 class="fade-up">Nossos <span>Serviços</span></h2>
+    <p class="section-desc fade-up">Da retirada no porto até a entrega no destino final — operação completa, segura e rastreada.</p>
+    <div class="services-grid fade-up">
+      <div class="service-card">
+        <span class="service-icon">🚢</span>
+        <h3>Transporte de Contêineres</h3>
+        <p>Movimentação de contêineres de todos os tamanhos com equipamentos adequados e motoristas especializados em operações portuárias.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-icon">⚓</span>
+        <h3>Remoção e Transferência Portuária</h3>
+        <p>Operações de remoção e devolução nos principais portos do Sul do Brasil, com agilidade e conformidade documental.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-icon">📦</span>
+        <h3>Cargas Secas</h3>
+        <p>Transporte de carga seca geral em todo o território nacional, com seguro e rastreamento incluso em todas as operações.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-icon">🏢</span>
+        <h3>Logística para Empresas</h3>
+        <p>Soluções personalizadas para empresas com volume regular de cargas. Contratos e rotas fixas com condições especiais.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIFERENCIAIS -->
+<section id="diferenciais">
+  <div class="container">
+    <div class="diff-grid">
+      <div>
+        <p class="section-label fade-up">Por que a JN3C</p>
+        <h2 class="fade-up">Nossos <span>Diferenciais</span></h2>
+        <div class="diff-list">
+          <div class="diff-item fade-up">
+            <div class="diff-icon">🛰️</div>
+            <div>
+              <h4>Rastreamento via Satélite</h4>
+              <p>Sua carga monitorada em tempo real durante todo o trajeto. Acesso à localização sempre que precisar.</p>
+            </div>
+          </div>
+          <div class="diff-item fade-up">
+            <div class="diff-icon">🛡️</div>
+            <div>
+              <h4>Seguro de Cargas</h4>
+              <p>Todas as cargas transportadas com cobertura de seguro. Sua mercadoria protegida do início ao fim.</p>
+            </div>
+          </div>
+          <div class="diff-item fade-up">
+            <div class="diff-icon">⏱️</div>
+            <div>
+              <h4>Disponibilidade 24h</h4>
+              <p>Operamos segunda a sábado, 24 horas por dia. Atendimento rápido e equipe sempre disponível.</p>
+            </div>
+          </div>
+          <div class="diff-item fade-up">
+            <div class="diff-icon">🚛</div>
+            <div>
+              <h4>Especialistas em Porto</h4>
+              <p>Sede em Itajaí/SC — um dos maiores complexos portuários do Brasil. Conhecimento técnico que faz diferença.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="diff-visual fade-up">
+        <div class="big-num">Itajaí</div>
+        <p>Porto de origem</p>
+        <br/>
+        <div style="height:1px;background:var(--gray);margin:1.5rem 0;"></div>
+        <div style="font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.8rem;color:var(--orange);">Sul + Sudeste</div>
+        <p>Principal área de atuação</p>
+        <br/>
+        <div style="height:1px;background:var(--gray);margin:1.5rem 0;"></div>
+        <div style="font-family:'Barlow Condensed',sans-serif;font-weight:900;font-size:1.8rem;color:var(--white);">Brasil todo</div>
+        <p>Cobertura total quando necessário</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REGIÕES -->
+<section id="regioes">
+  <div class="container">
+    <p class="section-label fade-up">Onde atuamos</p>
+    <h2 class="fade-up">Cobertura <span>Nacional</span></h2>
+    <p class="section-desc fade-up">Foco estratégico no Sul e Sudeste, com capacidade de atender em todo o Brasil.</p>
+    <div class="regions-grid fade-up">
+      <div class="region-card">
+        <div class="flag">🏆</div>
+        <h4>Santa Catarina</h4>
+        <span class="highlight">Sede — Itajaí</span>
+      </div>
+      <div class="region-card">
+        <div class="flag">⭐</div>
+        <h4>Paraná</h4>
+        <span class="highlight">Foco Principal</span>
+      </div>
+      <div class="region-card">
+        <div class="flag">⭐</div>
+        <h4>Rio Grande do Sul</h4>
+        <span class="highlight">Foco Principal</span>
+      </div>
+      <div class="region-card">
+        <div class="flag">⭐</div>
+        <h4>São Paulo</h4>
+        <span class="highlight">Foco Principal</span>
+      </div>
+      <div class="region-card">
+        <div class="flag">🇧🇷</div>
+        <h4>Demais Estados</h4>
+        <span class="highlight" style="background:var(--gray);color:var(--muted);">Atendimento Nacional</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato">
+  <div class="container">
+    <p class="section-label fade-up">Fale conosco</p>
+    <h2 class="fade-up">Solicite seu <span>Orçamento</span></h2>
+    <div class="contact-wrapper">
+      <div class="contact-info fade-up">
+        <div class="contact-item">
+          <div class="icon">📞</div>
+          <div>
+            <span>WhatsApp / Telefone</span>
+            <a href="https://wa.me/5543998183101" target="_blank" rel="noopener">(43) 99818-3101</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon">✉️</div>
+          <div>
+            <span>E-mail</span>
+            <a href="mailto:trjn3csuporte@outlook.com">trjn3csuporte@outlook.com</a>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon">📍</div>
+          <div>
+            <span>Sede</span>
+            <a>Itajaí — Santa Catarina</a>
+          </div>
+        </div>
+        <div>
+          <p style="font-size:0.8rem;color:var(--muted);margin-bottom:0.8rem;text-transform:uppercase;letter-spacing:0.08em;">Siga nas redes</p>
+          <div class="social-links">
+            <a href="https://instagram.com/transportadorajn3c" class="social-btn ig" target="_blank" rel="noopener">📸 Instagram</a>
+            <a href="https://tiktok.com/@transportadorajn3c" class="social-btn tt" target="_blank" rel="noopener">🎵 TikTok</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="cta-box fade-up">
+        <h3>Precisa de um Frete?</h3>
+        <p>Nosso time responde rápido. Fale agora pelo WhatsApp e receba seu orçamento sem compromisso.</p>
+        <a href="https://wa.me/5543998183101?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20TR%20JN3C%20e%20gostaria%20de%20solicitar%20um%20or%C3%A7amento." class="whatsapp-btn" target="_blank" rel="noopener">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.112.546 4.1 1.5 5.832L0 24l6.335-1.484A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.808 9.808 0 01-5.034-1.388l-.361-.214-3.741.877.893-3.658-.235-.374A9.793 9.793 0 012.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+          Falar no WhatsApp Agora
+        </a>
+        <p style="font-size:0.75rem;color:#444;margin-top:1rem;">Seg a Sáb &bull; 24 horas &bull; Resposta rápida</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">
+    <img
+      src="assets/images/logo-transportadora-trjn3c.png"
+      alt="TR JN3C LTDA"
+      width="120"
+      height="44"
+      loading="lazy"
+    />
+  </div>
+  <p>Transportadora especializada em contêineres e carga seca &bull; Itajaí/SC</p>
+  <p style="margin-top:0.4rem;">
+    <a href="https://instagram.com/transportadorajn3c" target="_blank" rel="noopener">@transportadorajn3c</a>
+    &bull; <a href="mailto:trjn3csuporte@outlook.com">trjn3csuporte@outlook.com</a>
+  </p>
+  <p style="margin-top:1rem;font-size:0.7rem;color:#333;">© 2025 TR JN3C LTDA — Todos os direitos reservados</p>
+</footer>
+
+<script>
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+</script>
+</body>
+</html>
